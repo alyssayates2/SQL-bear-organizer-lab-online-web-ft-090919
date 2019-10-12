@@ -21,7 +21,6 @@ end
 def selects_most_prominent_color_and_returns_with_count
   "SELECT color, count(color) AS bears
 FROM bears
-WHERE bears = 1
 GROUP BY color
 ORDER BY bears DESC;"
 end
